@@ -2,7 +2,7 @@ import json
 import numpy as np
 
 
-def task5(ranking_str_1: str, ranking_str_2: str) -> str:
+def task(ranking_str_1: str, ranking_str_2: str) -> str:
     try:
         ranking1 = json.loads(ranking_str_1)
         ranking2 = json.loads(ranking_str_2)
@@ -53,7 +53,7 @@ def _get_ranking_length(ranking):
 
 
 def main():
-    res = task5('["1", ["2","3"],"4", ["5", "6", "7"], "8", "9", "10"]', '[["1","2"], ["3","4","5"], "6", "7", "9", ["8","10"]]')
+    res = task('["1", ["2","3"],"4", ["5", "6", "7"], "8", "9", "10"]', '[["1","2"], ["3","4","5"], "6", "7", "9", ["8","10"]]')
     print(f"Ответ: {res}")
 
 
